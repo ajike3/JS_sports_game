@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JS Game Challenge</title>
+    <title><size>JS Game Challenge</size></title>
     <link rel="stylesheet" href="./assests/css/style.css">
 </head>
-<script src="./assets/javascript/game.js"></script>
-  </body>
-</html>
-    <div>
-        <h1>My JS Game</h1>
+
+    
+<body>
+    <div>  
+        <audio id="bballshot">
+            <source src="assets/css/javascript/audio.mp3" type="audio/mpeg">
+        </audio>     
+        
+        <h1> <strong>My JavaScript Game</strong> </h1>
+
         <div id="reset-container">
-            <button id="reset-button">RESET</button><br>
-            NUMBER OF RESETS: <span id="num-resets">0</span>
+            <button id="reset-button" type="button">RESET</button><br>
+            <strong> NUMBER OF RESETS:</strong> <span id="num-resets">0</span>
         </div>
         <div class="clear"></div>
         <div class="left">
@@ -23,7 +28,7 @@
                 GOALS: <span id="teamone-numgoals">0</span>
             </div>
             <div>
-                <button id="teamone-shoot-button">SHOOT</button>
+                <button onclick="playaudio()" id="teamone-shoot-button">SHOOT</button>
             </div>
         </div>
         <div class="right">
@@ -35,11 +40,18 @@
                 GOALS: <span id="teamtwo-numgoals">0</span>
             </div>
             <div>
-                <button id="teamtwo-shoot-button">SHOOT</button>
+                <button onclick="playaudio()" id="teamtwo-shoot-button">SHOOT</button>
             </div>
         </div>
         <div class="clear"></div>
     </div>
     <script src="./assests/css/javascript/game.js"></script>
+
+    <script>
+        var au = document.getElementById("bballshot");
+        function playaudio() {
+            au.play();
+        }
+    </script>
 </body>
 </html>

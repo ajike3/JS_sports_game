@@ -1,6 +1,6 @@
-body{
-    background-size: cover;
-    color: bisque;
+body{background-size: cover;
+     color: rgb(0, 0, 0);
+     
 }
 .hide {
     display: none;
